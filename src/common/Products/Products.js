@@ -65,7 +65,7 @@ const Products = ({darkMode}) => {
                                         {product.title.substr(0,19)}
                                     </h5>
                                     <p className="card-text lead fw-bold price">
-                                        Rs {product.price*100}
+                                        INR {product.price*100}
                                     </p>
                                         <button className='btn-text'>Buy Now</button>
                                 </div>

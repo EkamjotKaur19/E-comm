@@ -34,7 +34,7 @@ const Navbar = ({darkMode, name}) => {
               
 
               <li >
-                <Link to='/' className={darkMode?"nav-heads-dark":"nav-heads"}>home</Link>
+                <Link to='/page' className={darkMode?"nav-heads-dark":"nav-heads"}>home</Link>
               </li>
 
               <li >

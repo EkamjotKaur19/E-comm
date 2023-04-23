@@ -18,7 +18,7 @@ const Cart = ({ NewItems, addToCart, darkMode }) => {
                 <img src={val.cover} alt='new' className="new-pdts" />
               </div>
               <h4>{val.name}</h4>
-              <span>${val.price}</span>
+              <span>{val.price}</span>
             </div>
           )
         })}

@@ -12,47 +12,47 @@ const Ddata = [
   {
     cover: d1,
     name: "BenuX 2022",
-    price: "$250",
+    price: "INR 2500",
   },
   {
     cover: d2,
     name: "Sony TV 1080p",
-    price: "$450",
+    price: "INR 45000",
   },
   {
     cover: d3,
     name: "Sony PS4",
-    price: "$50",
+    price: "INR 50000",
   },
   {
     cover: d4,
     name: "Setgearr 2022",
-    price: "$100",
+    price: "INR 10000",
   },
   {
     cover: d5,
     name: "Tony BGB",
-    price: "$20",
+    price: "INR 2000",
   },
   {
     cover: d6,
     name: "RG products",
-    price: "$200",
+    price: "INR 20000",
   },
   {
     cover: d7,
     name: "Ranasonic 2022",
-    price: "$300",
+    price: "INR 30000",
   },
   {
     cover: d8,
     name: "Pune HD",
-    price: "$30",
+    price: "INR 20000",
   },
   {
     cover: d9,
     name: "Sony CCTV",
-    price: "$80",
+    price: "INR 8000",
   },
 ]
 export default Ddata

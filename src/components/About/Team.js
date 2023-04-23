@@ -15,7 +15,7 @@ const Team = ({darkMode}) => {
           <img className="team-member-image" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png"/>
         </div>
         <p className="text-blk name">
-          Ekamjot 
+          Sanchit Chhabra
         </p>
         <p className="text-blk position">
           Web Developer

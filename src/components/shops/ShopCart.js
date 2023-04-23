@@ -76,7 +76,7 @@ const ShopCart = ({ shopItems, addToCart, darkMode }) => {
                   <i className='fa fa-star'></i>
                 </div>
                 <div className='price'>
-                  <h4>${shopItems.price}.00 </h4>
+                  <h4>{shopItems.price}</h4>
                   <button onClick={() => addToCart(shopItems)}>
                     <i className='fa fa-plus'></i>
                   </button>

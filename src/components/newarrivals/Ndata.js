@@ -9,32 +9,32 @@ const Ndata = [
   {
     cover: a1,
     name: "Sunglass",
-    price: "150",
+    price: "INR 1500",
   },
   {
     cover: a2,
     name: "Makeup",
-    price: "250",
+    price: "INR 900",
   },
   {
     cover: a3,
     name: "Smart Watch",
-    price: "50",
+    price: "INR 1300",
   },
   {
     cover: a4,
     name: "Lipstick",
-    price: "15",
+    price: "INR 300",
   },
   {
     cover: a5,
     name: "Green Plant",
-    price: "10",
+    price: "INR 250",
   },
   {
     cover: a6,
     name: "Bonsai tree",
-    price: "400",
+    price: "INR 1200",
   },
 ]
 
