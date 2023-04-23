@@ -21,14 +21,14 @@ const Team = ({darkMode}) => {
           Web Developer
         </p>
         <p className="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          CSE-III, UIET, PU
         </p>
         <div className="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"/>
+          <a href="https://www.linkedin.com/in/sanchit-chhabra-134160213/" target="_blank">
+          <i className="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"/>
+          <a href="https://www.instagram.com/sanchitchhabra16/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
@@ -45,14 +45,14 @@ const Team = ({darkMode}) => {
           CEO
         </p>
         <p className="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          CSE-III, UIET, PU
         </p>
         <div className="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"/>
+          <a href="https://www.linkedin.com/in/ekamjot-kaur-70a440259/" target="_blank">
+          <i className="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"/>
+          <a href="https://www.instagram.com/ekamjot.kaur_19/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
@@ -69,14 +69,14 @@ const Team = ({darkMode}) => {
           Web Developer
         </p>
         <p className="text-blk feature-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          CSE-III, UIET, PU
         </p>
         <div className="social-icons">
-          <a href="https://www.twitter.com" target="_blank">
-            <img className="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"/>
+          <a href="https://www.linkedin.com/in/ekamjot-kaur-70a440259/" target="_blank">
+          <i className="fa-brands fa-linkedin-in"></i>
           </a>
-          <a href="https://www.facebook.com" target="_blank">
-            <img className="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"/>
+          <a href="https://www.instagram.com/ekamjot.kaur_19/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>

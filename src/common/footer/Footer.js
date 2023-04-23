@@ -6,9 +6,9 @@ export default function Footer() {
         <div className="foot-left">
             <h1 className="foot-left-title">E-BAZAAR</h1>
             <p className="foot-desc">
-                There are many variations of passages of Lorem Ipsum available, but
-                the majority have suffered alteration in some form, by injected
-                humour, or randomised words which don’t look even slightly believable.
+                E-Bazaar is an E-Commerce web application created as a project by <strong>Ekamjot</strong>.
+                <br></br>
+                It uses React for frontend and Firebase for User authentication. Products are both hard-coded and fetched from an API.
             </p>
             <div className="social">
                 <i class="fa-brands fa-facebook-f foot-icon fb"></i>
@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
 
             <div className="contact-item">
-            <i class="fa-thin fa-circle-phone-flip foot-icon"></i>
+            <i className="fa-thin fa-phone foot-icon ph"></i>
                 +91 78147 76634
             </div>
 
