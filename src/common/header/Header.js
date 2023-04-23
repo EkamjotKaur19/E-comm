@@ -7,7 +7,6 @@ import Navbar from "./Navbar"
 const Header = ({ CartItem, darkMode, name }) => {
   return (
     <>
-      <Head />
       <Search CartItem={CartItem} darkMode={darkMode}/>
       <Navbar darkMode={darkMode} name={name}/>
     </>

@@ -15,6 +15,8 @@ import Signup from "./common/Signup/Signup"
 import {auth} from './firebase';
 import Login2 from "./common/Login2/Login2"
 import { Card } from "./common/Card/Card"
+import Head from "./common/header/Head"
+import Search from "./common/header/Search"
 
 function App() {
 
@@ -66,38 +68,75 @@ function App() {
   return (
     <>
       <Router>
-        <Header CartItem={CartItem} darkMode={darkMode} name={userName} />
-        <div className="head-btns">
-          <button type="button" className={darkMode? "btn btn-light pos":"btn btn-dark pos"} data-bs-toggle="button" onClick={() => setDarkMode(!darkMode)} >{darkMode?'Light Mode' : 'Dark Mode'}</button>
-          <h4 className={darkMode? "user-head-dark":"user-head"}>Hy {userName} , See what's new for you on our store!</h4>
-        </div>
-        <Switch>
-        
+
+        <Head />
+
           <Route path='/' exact>
-            <Pages  name={userName} productItems={productItems} addToCart={addToCart} shopItems={shopItems} NewItems={NewItems} darkMode={darkMode}/>
-          </Route>
-          <Route path='/cart' exact>
-            <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} darkMode={darkMode}/>
-          </Route>
-          <Route path='/products' exact>
-            <Products darkMode={darkMode}/>
+            <Signup />
           </Route>
           <Route path='/login' exact>
             <Login2 />
           </Route>
+        
+        
+        <Switch>
+
+          
+        
+          <Route path='/page' exact>
+          <Header CartItem={CartItem} darkMode={darkMode} name={userName} />
+          <div className="head-btns">
+            <button type="button" className={darkMode? "btn btn-light pos":"btn btn-dark pos"} data-bs-toggle="button" onClick={() => setDarkMode(!darkMode)} >{darkMode?'Light Mode' : 'Dark Mode'}</button>
+            <h4 className={darkMode? "user-head-dark":"user-head"}>Hy {userName} , See what's new for you on our store!</h4>
+          </div>
+            <Pages  name={userName} productItems={productItems} addToCart={addToCart} shopItems={shopItems} NewItems={NewItems} darkMode={darkMode}/>
+          </Route>
+          <Route path='/cart' exact>
+          <Header CartItem={CartItem} darkMode={darkMode} name={userName} />
+          <div className="head-btns">
+            <button type="button" className={darkMode? "btn btn-light pos":"btn btn-dark pos"} data-bs-toggle="button" onClick={() => setDarkMode(!darkMode)} >{darkMode?'Light Mode' : 'Dark Mode'}</button>
+            <h4 className={darkMode? "user-head-dark":"user-head"}>Hy {userName} , See what's new for you on our store!</h4>
+          </div>
+            <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} darkMode={darkMode}/>
+          </Route>
+          <Route path='/register' exact>
+          <Header CartItem={CartItem} darkMode={darkMode} name={userName} />
+          <div className="head-btns">
+            <button type="button" className={darkMode? "btn btn-light pos":"btn btn-dark pos"} data-bs-toggle="button" onClick={() => setDarkMode(!darkMode)} >{darkMode?'Light Mode' : 'Dark Mode'}</button>
+            <h4 className={darkMode? "user-head-dark":"user-head"}>Hy {userName} , See what's new for you on our store!</h4>
+          </div>
+            <Signup />
+          </Route>
+          <Route path='/products' exact>
+          <Header CartItem={CartItem} darkMode={darkMode} name={userName} />
+          <div className="head-btns">
+            <button type="button" className={darkMode? "btn btn-light pos":"btn btn-dark pos"} data-bs-toggle="button" onClick={() => setDarkMode(!darkMode)} >{darkMode?'Light Mode' : 'Dark Mode'}</button>
+            <h4 className={darkMode? "user-head-dark":"user-head"}>Hy {userName} , See what's new for you on our store!</h4>
+          </div>
+            <Products darkMode={darkMode}/>
+          </Route>
+          
 
           <Route path='/about' exact>
+          <Header CartItem={CartItem} darkMode={darkMode} name={userName} />
+          <div className="head-btns">
+            <button type="button" className={darkMode? "btn btn-light pos":"btn btn-dark pos"} data-bs-toggle="button" onClick={() => setDarkMode(!darkMode)} >{darkMode?'Light Mode' : 'Dark Mode'}</button>
+            <h4 className={darkMode? "user-head-dark":"user-head"}>Hy {userName} , See what's new for you on our store!</h4>
+          </div>
             <About darkMode={darkMode}/>
           </Route>
 
           <Route path='/contact' exact>
+          <Header CartItem={CartItem} darkMode={darkMode} name={userName} />
+          <div className="head-btns">
+            <button type="button" className={darkMode? "btn btn-light pos":"btn btn-dark pos"} data-bs-toggle="button" onClick={() => setDarkMode(!darkMode)} >{darkMode?'Light Mode' : 'Dark Mode'}</button>
+            <h4 className={darkMode? "user-head-dark":"user-head"}>Hy {userName} , See what's new for you on our store!</h4>
+          </div>
             <Contact darkMode={darkMode}/>
           </Route>
           
 
-          <Route path='/register' exact>
-            <Signup />
-          </Route>
+          
 
           <Route path='/checkout' exact>
             <Card />

@@ -2,11 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 const Search = ({ CartItem, darkMode }) => {
-  // fixed Header
-  window.addEventListener("scroll", function () {
-    const search = document.querySelector(".search")
-    search.classList.toggle("active", window.scrollY > 100)
-  })
+  
 
   return (
     <>
@@ -19,7 +15,7 @@ const Search = ({ CartItem, darkMode }) => {
           </div>
 
           <div className='search-box f_flex'>
-            <i className='fa fa-search'></i>
+            <i className='searchicon fa fa-search'></i>
             <input type='text' placeholder='Search and hit enter...' />
             <span>All Category</span>
           </div>
@@ -29,7 +25,8 @@ const Search = ({ CartItem, darkMode }) => {
             <div className='cart'>
               <Link to='/cart'>
                 <i className='fa fa-shopping-bag icon-circle'></i>
-                <span>{CartItem.length === 0 ? "" : CartItem.length}</span>
+                {CartItem &&
+                <span>{CartItem.length === 0 ? "" : CartItem.length}</span>}
               </Link>
             </div>
           </div>

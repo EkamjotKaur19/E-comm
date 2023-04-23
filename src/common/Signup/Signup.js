@@ -33,7 +33,7 @@ function Signup() {
           displayName: values.name,
         });
         
-        history.push('/');
+        history.push('/page');
         
       })
       .catch((err) => {
@@ -45,7 +45,7 @@ function Signup() {
   return (
     <div className={styles.container}>
       <div className={styles.innerBox}>
-        <h1 className={styles.heading}>Signup</h1>
+        <h1 className={styles.heading}>SignUp To E-Bazaar</h1>
 
         <InputControl
           label="Name"

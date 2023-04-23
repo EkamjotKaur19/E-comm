@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import { auth } from "../../firebase"
+
 
 const Navbar = ({darkMode, name}) => {
+  const handleLogout = () =>{
+    auth.signOut().then(function() {
+      alert("You are Logged Out")
+    }).catch(function(error) {
+      // An error happened.
+    });
+  }
   
   return (
     <>
@@ -36,7 +45,7 @@ const Navbar = ({darkMode, name}) => {
                 <Link to='/about' className={darkMode?"nav-heads-dark":"nav-heads"}>About</Link>
               </li>
               <li>
-                <Link to='/login' className={darkMode?"nav-heads-dark":"nav-heads"}>Login</Link>
+                <Link to='/' className={darkMode?"nav-heads-dark":"nav-heads"} onClick={handleLogout}>Logout</Link>
               </li>
               <li >
                 <Link to='/register' className={darkMode?"nav-heads-dark":"nav-heads"}>Register</Link>
