@@ -1,7 +1,6 @@
 {
   "name": "bonik-shop",
   "version": "0.1.0",
-  "homepage": "https://EkamjotKaur19.github.io/E-Bazaar",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
